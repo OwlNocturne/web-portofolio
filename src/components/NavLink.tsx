@@ -1,8 +1,5 @@
-import { ReactNode } from 'react';
-import {
-    Link,
-    useColorModeValue,
-} from '@chakra-ui/react';
+import { ReactNode } from "react";
+import { Link, useColorModeValue } from "@chakra-ui/react";
 
 export default function NavLink({ children }: { children: ReactNode }) {
     return (
@@ -10,11 +7,12 @@ export default function NavLink({ children }: { children: ReactNode }) {
             px={2}
             py={1}
             _hover={{
-                textDecoration: 'none',
-                bg: useColorModeValue('gray.200', 'gray.700'),
+                textDecoration: "none",
+                bg: useColorModeValue("gray.200", "gray.700"),
             }}
-            href={'#'}>
+            href={"#"}
+        >
             {children}
         </Link>
-    )
+    );
 }
