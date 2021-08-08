@@ -4,11 +4,13 @@ import NavBar from "./components/NavBar";
 import theme from "./theme";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 export const App = () => (
     <ChakraProvider theme={theme}>
         <NavBar />
         <Hero />
         <Projects />
+        <Contact />
     </ChakraProvider>
 );
