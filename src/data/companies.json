@@ -1,14 +1,10 @@
 [
     {
         "name": "Mobilus",
-        "imageUrl": "https://prtimes.jp/i/31387/1/ogp/d31387-1-391718-0.jpg",
-        "imageAlt": "Mobilus",
         "websiteUrl": "https://mobilus.co.jp/"
     },
     {
-        "name": "Playnext",
-        "imageUrl": "http://1.bp.blogspot.com/-lB2BMri-gAU/Vvtn5yCsBrI/AAAAAAAAAes/N9n2Hw9q9SM-cTOqNnQv_5SI4csklSSRQ/s1600-r/TOP%25E7%2594%25BB%25E5%2583%258F.png",
-        "imageAlt": "Playnext",
+        "name": "Playnext-Lab",
         "websiteUrl": "https://www.playnext-lab.co.jp/"
     }
 ]
