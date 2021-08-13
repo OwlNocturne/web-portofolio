@@ -1,10 +1,28 @@
 [
     {
-        "name": "Mobilus",
-        "websiteUrl": "https://mobilus.co.jp/"
+        "name": "National Institute of Informatics",
+        "websiteUrl": "https://mobilus.co.jp/",
+        "roles": "Invited Researcher"
     },
     {
-        "name": "Playnext-Lab",
-        "websiteUrl": "https://www.playnext-lab.co.jp/"
+        "name": "Mobilus",
+        "websiteUrl": "https://mobilus.co.jp/",
+        "roles": "Software Engineer"
+    },
+    {
+        "name": "Playnext Lab Inc",
+        "websiteUrl": "https://www.playnext-lab.co.jp/",
+        "roles": "Software Engineer"
+    },
+    {
+        "name": "Ghelia",
+        "agency": "Playnext Lab Inc",
+        "websiteUrl": "https://www.playnext-lab.co.jp/",
+        "roles": "Software Engineer"
+    },
+    {
+        "name": "Pretia",
+        "websiteUrl": "https://www.playnext-lab.co.jp/",
+        "roles": "Software Engineer, Scrum Master"
     }
 ]

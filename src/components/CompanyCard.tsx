@@ -1,14 +1,16 @@
 import { ExternalLinkIcon } from "@chakra-ui/icons";
-import { Box, Heading, Link, useColorModeValue } from "@chakra-ui/react";
+import { Box, Heading, HStack, Link, useColorModeValue } from "@chakra-ui/react";
 
 type CompanyCardProps = {
     name: string;
+    agency?: string;
     websiteUrl: string;
+    roles: string;
 };
 
 export default function ProjectCard({ company }: { company: CompanyCardProps }) {
     return (
-        <Box
+        <HStack
             display="block"
             maxW={"320px"}
             bg={useColorModeValue("white", "gray.900")}
@@ -20,9 +22,17 @@ export default function ProjectCard({ company }: { company: CompanyCardProps }) 
             <Heading fontSize={"2xl"} fontFamily={"body"}>
                 {company.name}
             </Heading>
+            {company.agency && (
+                <Heading fontSize={"xs"} fontFamily={"body"}>
+                    (Via {company.agency})
+                </Heading>
+            )}
+            <Box fontWeight={600} color={"gray.500"}>
+                Roles: {company.roles}
+            </Box>
             <Link href={company.websiteUrl} fontWeight={600} color={"gray.500"} mb={4} isExternal>
                 Corporate website <ExternalLinkIcon mx="2px" />
             </Link>
-        </Box>
+        </HStack>
     );
 }
