@@ -1,4 +1,4 @@
-import { FormEvent, useState } from "react";
+import { useEffect, useState } from "react";
 import {
     FormControl,
     Input,
@@ -22,22 +22,11 @@ export default function Contact() {
     const [state, setState] = useState<"initial" | "submitting" | "success">("initial");
     const [error, setError] = useState(false);
 
-    function handleSubmit(e: FormEvent) {
-        e.preventDefault();
-
-        setError(false);
-        setState("submitting");
-
-        // TODO Actually send email
-        setTimeout(() => {
-            if (email === "fail@example.com") {
-                setError(true);
-                setState("initial");
-                return;
-            }
+    useEffect(() => {
+        if (window.location.search.includes("success=true")) {
             setState("success");
-        }, 1000);
-    }
+        }
+    }, []);
 
     return (
         <Flex
@@ -57,10 +46,20 @@ export default function Contact() {
                 <Heading as={"h2"} fontSize={{ base: "xl", sm: "2xl" }} textAlign={"center"} mb={5}>
                     Contact Me
                 </Heading>
-                <VStack as={"form"} spacing={"12px"} onSubmit={handleSubmit}>
+                <VStack
+                    as={"form"}
+                    spacing={"12px"}
+                    name={"contact"}
+                    method={"POST"}
+                    action={"/contact/?success=true"}
+                    data-netlify="true"
+                >
+                    <input type="hidden" name="form-name" value="contact" />
                     <FormControl isRequired>
                         <FormLabel>Email address</FormLabel>
                         <Input
+                            id={"email"}
+                            name={"email"}
                             variant={"solid"}
                             borderWidth={1}
                             color={"gray.800"}
@@ -68,7 +67,6 @@ export default function Contact() {
                                 color: "gray.400",
                             }}
                             borderColor={useColorModeValue("gray.300", "gray.700")}
-                            id={"email"}
                             type={"email"}
                             required
                             placeholder={"Your Email"}
@@ -81,6 +79,8 @@ export default function Contact() {
                     <FormControl isRequired>
                         <FormLabel>Your Name</FormLabel>
                         <Input
+                            id={"name"}
+                            name={"name"}
                             variant={"solid"}
                             borderWidth={1}
                             color={"gray.800"}
@@ -88,7 +88,6 @@ export default function Contact() {
                                 color: "gray.400",
                             }}
                             borderColor={useColorModeValue("gray.300", "gray.700")}
-                            id={"name"}
                             type={"text"}
                             required
                             placeholder={"Your Name"}
@@ -101,6 +100,8 @@ export default function Contact() {
                     <FormControl w={"100%"} isRequired>
                         <FormLabel>Message:</FormLabel>
                         <Textarea
+                            id="message"
+                            name="message"
                             value={message}
                             onChange={(e) => setMessage(e.target.value)}
                             placeholder="Please insert your text"
