@@ -4,17 +4,35 @@
         "imageAlt": "Eba Egg Logo",
         "title": "Eba & Egg",
         "shortDescription": "Wii U Game",
-        "longDescription": "This is a game for the Wii U",
+        "longDescription": "A high score based runner game.",
         "platforms": "Wii U",
         "languages": "C#"
     },
     {
         "imageUrl": "https://jp.techcrunch.com/wp-content/uploads/2018/10/sub11.jpg",
-        "imageAlt": "Sarah Hacker Club 1",
+        "imageAlt": "Sarah Hacker Club",
         "title": "Sarah Hacker Club",
-        "shortDescription": "AR Game ",
-        "longDescription": "This is an escape game for mobile games played in location",
+        "shortDescription": "AR mobile game ",
+        "longDescription": " An AR Escape game for played in a real physical location",
         "platforms": "Android, iPhone",
         "languages": "C#"
+    },
+    {
+        "imageUrl": "https://jp.techcrunch.com/wp-content/uploads/2018/10/sub11.jpg",
+        "imageAlt": "MobiWorks",
+        "title": "MobiWorks",
+        "shortDescription": "Mobile app",
+        "longDescription": "A communication app for corportations to use at work.",
+        "platforms": "Android",
+        "languages": "Java"
+    },
+    {
+        "imageUrl": "https://jp.techcrunch.com/wp-content/uploads/2018/10/sub11.jpg",
+        "imageAlt": "Deep Analyzer",
+        "title": "Deep Analyzer",
+        "shortDescription": "Web App",
+        "longDescription": "A web platform allowing customers to perform deep learning operations",
+        "platforms": "Web",
+        "languages": "Typescript, Python"
     }
 ]

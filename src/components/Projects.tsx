@@ -10,7 +10,7 @@ export default function Project() {
             <VStack>
                 <Heading>Portofolio</Heading>
                 <Flex>
-                    <SimpleGrid columns={2} spacing={10}>
+                    <SimpleGrid columns={3} spacing={10}>
                         {ProjectData.map((data) => (
                             <ProjectCard project={data} key={data.title} />
                         ))}

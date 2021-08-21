@@ -45,7 +45,7 @@ export default function ProjectCard({ project }: { project: ProjectCardProps }) 
                     </Box>
                 </Box>
 
-                <Box mt="1" fontWeight="semibold" as="h4" lineHeight="tight" isTruncated>
+                <Box mt="1" fontWeight="semibold" as="h4" lineHeight="tight">
                     {project.longDescription}
                 </Box>
             </Box>
