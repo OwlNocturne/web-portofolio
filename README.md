@@ -1,3 +1,8 @@
+# WebPortofolio
+Portofolio web page built using React, Typescript, and Chakra-ui.
+
+
+## Create React instructions
 This project was bootstrapped with
 [Create React App](https://github.com/facebook/create-react-app).
 
