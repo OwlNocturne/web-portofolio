@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Center, Flex, Heading, Select, SimpleGrid, VStack } from "@chakra-ui/react";
 import ProjectCard from "./ProjectCard";
-
 import ProjectData from "../data/projects.json";
+import Seperator from "./Seperator";
 
 export default function Portofolio() {
     const [projectType, setProjectType] = React.useState(0);
@@ -10,7 +10,7 @@ export default function Portofolio() {
     return (
         <Center w={"full"} id="Portofolio">
             <VStack>
-                <Heading>Portofolio</Heading>
+                <Seperator title={"Portofolio"} />
                 <Box w={"full"}>
                     <Select
                         align={"flex-start"}
