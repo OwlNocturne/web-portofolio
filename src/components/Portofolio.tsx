@@ -16,6 +16,7 @@ export default function Portofolio() {
                         align={"flex-start"}
                         w={{ base: "20%", md: "20%" }}
                         onChange={(e) => setProjectType(parseInt(e.target.value))}
+                        mb={5}
                     >
                         <option value={0}>All</option>
                         <option value={1}>Games</option>

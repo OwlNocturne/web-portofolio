@@ -16,14 +16,24 @@ export default function AboutMe() {
                 w={"full"}
                 justify={"center"}
                 px={useBreakpointValue({ base: 4, md: 8 })}
-                bgGradient={"linear(to-r, blackAlpha.800, transparent)"}
+                bgGradient={
+                    "linear(to-r, blackAlpha.900, blackAlpha.900, blackAlpha.300, transparent)"
+                }
             >
                 <Stack w={"full"} align={"flex-start"} spacing={6}>
                     <Heading fontWeight={600} fontSize={"6xl"} lineHeight={"110%"}>
                         Daniel Morais
                     </Heading>
-                    <Text color={"white"} fontWeight={700} lineHeight={1.2} fontSize={"3xl"}>
-                        Description
+                    <Text
+                        color={"gray.300"}
+                        fontWeight={700}
+                        lineHeight={1.2}
+                        fontSize={"2xl"}
+                        w={"40%"}
+                    >
+                        I have delivered a variety of software products filling roles as varied as
+                        Director, Scrum Master, and Software engineer. I try to challenge myself in
+                        a variety of user-centered roles.
                     </Text>
                 </Stack>
             </VStack>
