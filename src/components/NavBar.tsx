@@ -3,8 +3,8 @@ import { Box, Button, Flex, HStack, useColorMode, useColorModeValue } from "@cha
 import NavLink from "./NavLink";
 
 const Links = [
-    { displayText: "About", toID: "about" },
-    { displayText: "Projects", toID: "Projects" },
+    { displayText: "About", toID: "AboutMe" },
+    { displayText: "Portofolio", toID: "Portofolio" },
     { displayText: "Contact", toID: "Contact" },
 ];
 

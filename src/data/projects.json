@@ -6,7 +6,8 @@
         "shortDescription": "Wii U Game",
         "longDescription": "A high score based runner game.",
         "platforms": "Wii U",
-        "languages": "C#"
+        "languages": "C#",
+        "projectType": 1
     },
     {
         "imageUrl": "https://jp.techcrunch.com/wp-content/uploads/2018/10/sub11.jpg",
@@ -15,7 +16,8 @@
         "shortDescription": "AR mobile game ",
         "longDescription": " An AR Escape game for played in a real physical location",
         "platforms": "Android, iPhone",
-        "languages": "C#"
+        "languages": "C#",
+        "projectType": 1
     },
     {
         "imageUrl": "https://jp.techcrunch.com/wp-content/uploads/2018/10/sub11.jpg",
@@ -24,7 +26,8 @@
         "shortDescription": "Mobile app",
         "longDescription": "A communication app for corportations to use at work.",
         "platforms": "Android",
-        "languages": "Java"
+        "languages": "Java",
+        "projectType": 2
     },
     {
         "imageUrl": "https://jp.techcrunch.com/wp-content/uploads/2018/10/sub11.jpg",
@@ -33,6 +36,7 @@
         "shortDescription": "Web App",
         "longDescription": "A web platform allowing customers to perform deep learning operations",
         "platforms": "Web",
-        "languages": "Typescript, Python"
+        "languages": "Typescript, Python",
+        "projectType": 3
     }
 ]

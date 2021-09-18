@@ -1,5 +1,12 @@
 import { Badge, Box, Image } from "@chakra-ui/react";
 
+export enum ProjectType {
+    ALL = 0,
+    GAME = 1,
+    APP = 2,
+    WEB = 3,
+}
+
 type ProjectCardProps = {
     imageUrl: string;
     imageAlt: string;
@@ -8,6 +15,7 @@ type ProjectCardProps = {
     longDescription: string;
     platforms: string;
     languages: string;
+    projectType: ProjectType;
 };
 
 export default function ProjectCard({ project }: { project: ProjectCardProps }) {
