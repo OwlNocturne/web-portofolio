@@ -1,4 +1,4 @@
-import { Badge, Box, Image } from "@chakra-ui/react";
+import { Badge, Box, Image, useColorModeValue } from "@chakra-ui/react";
 
 export enum ProjectType {
     ALL = 0,
@@ -21,7 +21,14 @@ type ProjectCardProps = {
 
 export default function ProjectCard({ project }: { project: ProjectCardProps }) {
     return (
-        <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden" position="relative">
+        <Box
+            maxW="sm"
+            borderWidth="1px"
+            borderRadius="lg"
+            overflow="hidden"
+            position="relative"
+            bg={useColorModeValue("white", "gray.900")}
+        >
             <Box display="block">
                 <Image src={`${project.imageUrl}`} alt={project.imageAlt} />
                 <Badge
