@@ -3,10 +3,33 @@
         "imageUrl": "../images/EbaEgg.jpg",
         "imageAlt": "Eba Egg Logo",
         "title": "Eba & Egg",
-        "shortDescription": "Wii U Game",
+        "shortDescription": "Runner",
         "longDescription": "A high score based runner game.",
         "platforms": "Wii U",
         "languages": "C#",
+        "roles": "Director, Software Engineer",
+        "projectType": 1
+    },
+    {
+        "imageUrl": "../images/DoodleUnites.jpg",
+        "imageAlt": "Doodle Unites logo",
+        "title": "Doodle Unites",
+        "shortDescription": "Cooperative platformer",
+        "longDescription": "A high score based runner game.",
+        "platforms": "PC",
+        "languages": "C#",
+        "roles": "Director, Software Engineer",
+        "projectType": 1
+    },
+    {
+        "imageUrl": "../images/PsychoPass.png",
+        "imageAlt": "Psycho-Pass Psycho Hazard",
+        "title": "Psycho-Pass Psycho Hazard",
+        "shortDescription": "AR mobile game ",
+        "longDescription": " An AR Escape game for played in a real physical location",
+        "platforms": "Android, iPhone",
+        "languages": "C#",
+        "roles": "Scrum Master",
         "projectType": 1
     },
     {
@@ -17,6 +40,18 @@
         "longDescription": " An AR Escape game for played in a real physical location",
         "platforms": "Android, iPhone",
         "languages": "C#",
+        "roles": "Scrum Master",
+        "projectType": 1
+    },
+    {
+        "imageUrl": "../images/SaraHackerClub2.jpg",
+        "imageAlt": "Sarah Hacker Club 2",
+        "title": "Sarah Hacker Club 2",
+        "shortDescription": "AR mobile game ",
+        "longDescription": " An AR Escape game for played in a real physical location",
+        "platforms": "Android, iPhone",
+        "languages": "C#",
+        "roles": "Software Engineer, Scrum Master",
         "projectType": 1
     },
     {
@@ -27,6 +62,7 @@
         "longDescription": "A communication app for corportations to use at work.",
         "platforms": "Android",
         "languages": "Java",
+        "roles": "Software Engineer",
         "projectType": 2
     },
     {
@@ -37,6 +73,7 @@
         "longDescription": "A web platform allowing customers to perform deep learning operations",
         "platforms": "Web",
         "languages": "Typescript, Python",
+        "roles": "Software Engineer",
         "projectType": 3
     }
 ]

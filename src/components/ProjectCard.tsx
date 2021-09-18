@@ -15,6 +15,7 @@ type ProjectCardProps = {
     longDescription: string;
     platforms: string;
     languages: string;
+    roles: string;
     projectType: ProjectType;
 };
 
@@ -41,18 +42,27 @@ export default function ProjectCard({ project }: { project: ProjectCardProps }) 
                     <Badge borderRadius="full" px="2" colorScheme="teal">
                         {project.title}
                     </Badge>
-                    <Box
-                        color="gray.500"
-                        fontWeight="semibold"
-                        letterSpacing="wide"
-                        fontSize="xs"
-                        textTransform="uppercase"
-                        ml="2"
-                    >
-                        &bull; {project.shortDescription}
-                    </Box>
                 </Box>
-
+                <Box
+                    color="gray.500"
+                    fontWeight="semibold"
+                    letterSpacing="wide"
+                    fontSize="xs"
+                    textTransform="uppercase"
+                    ml="2"
+                >
+                    &bull; {project.shortDescription}
+                </Box>
+                <Box
+                    color="gray.500"
+                    fontWeight="semibold"
+                    letterSpacing="wide"
+                    fontSize="xs"
+                    textTransform="uppercase"
+                    ml="2"
+                >
+                    &bull; {project.roles}
+                </Box>
                 <Box mt="1" fontWeight="semibold" as="h4" lineHeight="tight">
                     {project.longDescription}
                 </Box>
