@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Center, Flex, Heading, Select, SimpleGrid, VStack } from "@chakra-ui/react";
-import ProjectCard, { ProjectType } from "./ProjectCard";
+import ProjectCard from "./ProjectCard";
 
 import ProjectData from "../data/projects.json";
 

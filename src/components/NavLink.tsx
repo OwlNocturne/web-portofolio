@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import { Link as LinkChakra, useColorModeValue } from "@chakra-ui/react";
 
 import { Link } from "react-scroll";
@@ -6,6 +5,7 @@ import { Link } from "react-scroll";
 type NavLinkProps = {
     displayText: string;
     toID: string;
+    key: string;
 };
 
 export default function NavLink({ navLink }: { navLink: NavLinkProps }) {

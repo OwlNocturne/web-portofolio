@@ -3,9 +3,9 @@ import { Box, Button, Flex, HStack, useColorMode, useColorModeValue } from "@cha
 import NavLink from "./NavLink";
 
 const Links = [
-    { displayText: "About", toID: "AboutMe" },
-    { displayText: "Portofolio", toID: "Portofolio" },
-    { displayText: "Contact", toID: "Contact" },
+    { displayText: "About", toID: "AboutMe", key: "navAbout" },
+    { displayText: "Portofolio", toID: "Portofolio", key: "navAbout" },
+    { displayText: "Contact", toID: "Contact", key: "navAbout" },
 ];
 
 export default function NavBar() {
@@ -18,7 +18,7 @@ export default function NavBar() {
                     <Box>Portofolio</Box>
                     <HStack spacing={4} display="flex">
                         {Links.map((link) => (
-                            <NavLink navLink={link}></NavLink>
+                            <NavLink key={link.key} navLink={link}></NavLink>
                         ))}
                     </HStack>
                 </HStack>
