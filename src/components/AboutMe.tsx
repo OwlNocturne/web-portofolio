@@ -20,7 +20,7 @@ export default function AboutMe() {
             >
                 <Stack w={"full"} align={"flex-start"} spacing={6}>
                     <Heading fontWeight={600} fontSize={"6xl"} lineHeight={"110%"}>
-                        Title
+                        Daniel Morais
                     </Heading>
                     <Text color={"white"} fontWeight={700} lineHeight={1.2} fontSize={"3xl"}>
                         Description

@@ -21,7 +21,7 @@ export default function Contact() {
     const [email, setEmail] = React.useState("");
     const [message, setMessage] = React.useState("");
     const [state, setState] = useState<"initial" | "submitting" | "success">("initial");
-    const [error, setError] = useState(false);
+    const [error] = useState(false);
 
     useEffect(() => {
         if (window.location.search.includes("success=true")) {

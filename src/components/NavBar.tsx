@@ -1,13 +1,5 @@
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
-import {
-    Box,
-    Button,
-    Flex,
-    HStack,
-    Spacer,
-    useColorMode,
-    useColorModeValue,
-} from "@chakra-ui/react";
+import { Box, Button, Flex, HStack, useColorMode, useColorModeValue } from "@chakra-ui/react";
 import NavLink from "./NavLink";
 import Social from "./Social";
 

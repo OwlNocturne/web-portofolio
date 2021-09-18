@@ -1,5 +1,5 @@
 import React from "react";
-import { Center, Divider, Flex, Heading, HStack, SimpleGrid, VStack } from "@chakra-ui/react";
+import { Center, Flex, SimpleGrid, VStack } from "@chakra-ui/react";
 import CompanyCard from "./CompanyCard";
 import CompaniesData from "../data/companies.json";
 import Seperator from "./Seperator";

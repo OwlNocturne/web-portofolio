@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Center, Flex, Heading, Select, SimpleGrid, VStack } from "@chakra-ui/react";
+import { Box, Center, Flex, Select, SimpleGrid, VStack } from "@chakra-ui/react";
 import ProjectCard from "./ProjectCard";
 import ProjectData from "../data/projects.json";
 import Seperator from "./Seperator";
