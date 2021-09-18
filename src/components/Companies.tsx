@@ -3,9 +3,9 @@ import { Center, Divider, Flex, Heading, HStack, SimpleGrid, VStack } from "@cha
 import CompanyCard from "./CompanyCard";
 import CompaniesData from "../data/companies.json";
 
-export default function Project() {
+export default function Companies() {
     return (
-        <Center w={"full"}>
+        <Center w={"full"} id="Companies">
             <VStack>
                 <HStack w={"80%"} p={4}>
                     <Divider />

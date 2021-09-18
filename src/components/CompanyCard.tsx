@@ -8,7 +8,7 @@ type CompanyCardProps = {
     roles: string;
 };
 
-export default function ProjectCard({ company }: { company: CompanyCardProps }) {
+export default function CompanyCard({ company }: { company: CompanyCardProps }) {
     return (
         <HStack
             display="block"
