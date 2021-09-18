@@ -1,15 +1,12 @@
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
-import {
-    Box,
-    Button,
-    Flex,
-    HStack,
-    useColorMode,
-    useColorModeValue,
-} from "@chakra-ui/react";
+import { Box, Button, Flex, HStack, useColorMode, useColorModeValue } from "@chakra-ui/react";
 import NavLink from "./NavLink";
 
-const Links = ["About", "Projects", "Contact"];
+const Links = [
+    { displayText: "About", toID: "about" },
+    { displayText: "Projects", toID: "Projects" },
+    { displayText: "Contact", toID: "Contact" },
+];
 
 export default function NavBar() {
     const { colorMode, toggleColorMode } = useColorMode();
@@ -21,7 +18,7 @@ export default function NavBar() {
                     <Box>Portofolio</Box>
                     <HStack spacing={4} display="flex">
                         {Links.map((link) => (
-                            <NavLink key={link}>{link}</NavLink>
+                            <NavLink navLink={link}></NavLink>
                         ))}
                     </HStack>
                 </HStack>

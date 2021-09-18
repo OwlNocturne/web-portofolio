@@ -1,18 +1,33 @@
 import { ReactNode } from "react";
-import { Link, useColorModeValue } from "@chakra-ui/react";
+import { Link as LinkChakra, useColorModeValue } from "@chakra-ui/react";
 
-export default function NavLink({ children }: { children: ReactNode }) {
+import { Link } from "react-scroll";
+
+type NavLinkProps = {
+    displayText: string;
+    toID: string;
+};
+
+export default function NavLink({ navLink }: { navLink: NavLinkProps }) {
     return (
-        <Link
+        <LinkChakra
             px={2}
             py={1}
             _hover={{
                 textDecoration: "none",
                 bg: useColorModeValue("gray.200", "gray.700"),
             }}
-            href={"#"}
         >
-            {children}
-        </Link>
+            <Link
+                activeClass="active"
+                to={navLink.toID}
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={200}
+            >
+                {navLink.displayText}
+            </Link>
+        </LinkChakra>
     );
 }

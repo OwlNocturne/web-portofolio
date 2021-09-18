@@ -34,6 +34,7 @@ export default function Contact() {
             align={"center"}
             justify={"center"}
             bg={useColorModeValue("gray.50", "gray.800")}
+            id="Contact"
         >
             <Container
                 maxW={"lg"}

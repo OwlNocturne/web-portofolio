@@ -6,7 +6,7 @@ import ProjectData from "../data/projects.json";
 
 export default function Project() {
     return (
-        <Center w={"full"}>
+        <Center w={"full"} id="Projects">
             <VStack>
                 <Heading>Portofolio</Heading>
                 <Flex>
