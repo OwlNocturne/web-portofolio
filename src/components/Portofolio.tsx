@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 
 import ProjectData from "../data/projects.json";
 
-export default function Project() {
+export default function Portofolio() {
     return (
         <Center w={"full"} id="Projects">
             <VStack>
