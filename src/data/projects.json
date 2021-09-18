@@ -1,6 +1,6 @@
 [
     {
-        "imageUrl": "https://assets.nintendo.com/image/upload/c_limit,f_auto,q_auto,w_1920/ncom/en_US/games/wii-u/e/eba-and-egg-a-hatch-trip-wii-u/screenshot-gallery/screenshot01.png",
+        "imageUrl": "../images/EbaEgg.jpg",
         "imageAlt": "Eba Egg Logo",
         "title": "Eba & Egg",
         "shortDescription": "Wii U Game",
@@ -10,7 +10,7 @@
         "projectType": 1
     },
     {
-        "imageUrl": "https://jp.techcrunch.com/wp-content/uploads/2018/10/sub11.jpg",
+        "imageUrl": "../images/SaraHackerClub.jpg",
         "imageAlt": "Sarah Hacker Club",
         "title": "Sarah Hacker Club",
         "shortDescription": "AR mobile game ",
@@ -20,7 +20,7 @@
         "projectType": 1
     },
     {
-        "imageUrl": "https://jp.techcrunch.com/wp-content/uploads/2018/10/sub11.jpg",
+        "imageUrl": "../images/MobiWork.png",
         "imageAlt": "MobiWorks",
         "title": "MobiWorks",
         "shortDescription": "Mobile app",
@@ -30,7 +30,7 @@
         "projectType": 2
     },
     {
-        "imageUrl": "https://jp.techcrunch.com/wp-content/uploads/2018/10/sub11.jpg",
+        "imageUrl": "../images/DeepAnalyzer.png",
         "imageAlt": "Deep Analyzer",
         "title": "Deep Analyzer",
         "shortDescription": "Web App",

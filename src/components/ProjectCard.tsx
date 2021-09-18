@@ -22,7 +22,7 @@ export default function ProjectCard({ project }: { project: ProjectCardProps }) 
     return (
         <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden" position="relative">
             <Box display="block">
-                <Image src={project.imageUrl} alt={project.imageAlt} />
+                <Image src={`${project.imageUrl}`} alt={project.imageAlt} />
                 <Badge
                     borderRadius="full"
                     colorScheme="gray"
