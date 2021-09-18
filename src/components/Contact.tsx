@@ -30,7 +30,7 @@ export default function Contact() {
     }, []);
 
     return (
-        <VStack w={"full"}>
+        <VStack w={"full"} m={[0, 50]}>
             <Seperator title={"Contact"} />
             <Flex
                 w={"full"}
