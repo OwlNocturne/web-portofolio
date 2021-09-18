@@ -1,6 +1,15 @@
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
-import { Box, Button, Flex, HStack, useColorMode, useColorModeValue } from "@chakra-ui/react";
+import {
+    Box,
+    Button,
+    Flex,
+    HStack,
+    Spacer,
+    useColorMode,
+    useColorModeValue,
+} from "@chakra-ui/react";
 import NavLink from "./NavLink";
+import Social from "./Social";
 
 const Links = [
     { displayText: "About", toID: "AboutMe", key: "navAbout" },
@@ -23,6 +32,7 @@ export default function NavBar() {
                     </HStack>
                 </HStack>
                 <Flex alignItems={"center"}>
+                    <Social />
                     <Button onClick={toggleColorMode}>
                         {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
                     </Button>
