@@ -6,6 +6,7 @@ import AboutMe from "./components/AboutMe";
 import Portofolio from "./components/Portofolio";
 import Contact from "./components/Contact";
 import Companies from "./components/Companies";
+import Footer from "./components/Footer";
 
 export const App = () => (
     <ChakraProvider theme={theme}>
@@ -14,5 +15,6 @@ export const App = () => (
         <Portofolio />
         <Companies />
         <Contact />
+        <Footer />
     </ChakraProvider>
 );
