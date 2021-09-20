@@ -12,11 +12,12 @@ export const resources = {
         translation,
     },
     pt: {
-        translationPT
+        "translation": translationPT,
     },
     ja: {
-        translationJA
+        "translation": translationJA,
     }
+    
 } as const;
 
 i18n
@@ -28,9 +29,10 @@ i18n
     // init i18next
     // for all options read: https://www.i18next.com/overview/configuration-options
     .init({
-        fallbackLng: "en",
+        fallbackLng: ["en","pt","ja"],
+        supportedLngs : ["en","pt","ja"],
         debug: true,
-        ns:["translation"],
+        ns:["translation", "translationPT", "translationJA"],
         defaultNS,
         interpolation: {
             escapeValue: false, // not needed for react as it escapes by default

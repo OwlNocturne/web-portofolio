@@ -10,25 +10,25 @@ import {
 } from "@chakra-ui/react";
 import NavLink from "./NavLink";
 import Social from "./Social";
-import i18n from "../i18next/i18n";
 import { useTranslation } from "react-i18next";
-import { withTranslation } from "react-i18next";
-
-const Links = [
-    { displayText: i18n.t("about"), toID: "AboutMe", key: "navAbout" },
-    { displayText: i18n.t("portfolio"), toID: "Portofolio", key: "navPortfolio" },
-    { displayText: i18n.t("contact"), toID: "Contact", key: "navContact" },
-];
+import { useState } from "react";
 
 function LanguageSelect() {
     const { t, i18n } = useTranslation();
+    const [selectedOption, setSelectedOption] = useState(i18n.language);
 
     return (
         <Select
+            value={selectedOption}
             alignItems={"center"}
             mr={5}
             w={{ base: "100%", md: "100%" }}
-            onChange={(e) => i18n.changeLanguage(e.target.value)}
+            onChange={(e) => {
+                if (i18n.language !== e.target.value) {
+                    i18n.changeLanguage(e.target.value);
+                    setSelectedOption(e.target.value);
+                }
+            }}
         >
             <option value={"en"}>{t("english")}</option>
             <option value={"ja"}>{t("japanese")}</option>
@@ -37,8 +37,15 @@ function LanguageSelect() {
     );
 }
 
-function NavBar() {
+export default function NavBar() {
     const { colorMode, toggleColorMode } = useColorMode();
+    const { t } = useTranslation();
+
+    const Links = [
+        { displayText: t("about"), toID: "AboutMe", key: "navAbout" },
+        { displayText: t("portfolio"), toID: "Portofolio", key: "navPortfolio" },
+        { displayText: t("contact"), toID: "Contact", key: "navContact" },
+    ];
 
     return (
         <Box bg={useColorModeValue("gray.100", "gray.900")} px={4} w="100%">
@@ -61,5 +68,3 @@ function NavBar() {
         </Box>
     );
 }
-
-export default withTranslation()(NavBar);
