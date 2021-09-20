@@ -1,8 +1,40 @@
 {
-    "about": "Sobre Min",
+    "about": "Sobre Mim",
     "portfolio": "Portofolio",
     "contact": "Contacto",
-    "english": "Ingles",
-    "japanese": "Japones",
-    "portuguese": "Portugues"
+    "english": "Inglês",
+    "japanese": "Japonês",
+    "portuguese": "Português",
+    "companies": "Empresas",
+    "via": "Via",
+    "roles": "Cargo",
+    "corporateWebsite": "Site Official",
+    "companiesData": [
+        {
+            "name": "National Institute of Informatics",
+            "websiteUrl": "https://www.nii.ac.jp/en",
+            "roles": "Investigador"
+        },
+        {
+            "name": "Mobilus Inc.",
+            "websiteUrl": "https://mobilus.co.jp/",
+            "roles": "Engenheiro de Software"
+        },
+        {
+            "name": "Playnext Lab Inc.",
+            "websiteUrl": "https://www.playnext-lab.co.jp/",
+            "roles": "Engenheiro de Software"
+        },
+        {
+            "name": "Ghelia Inc.",
+            "agency": "Playnext Lab Inc",
+            "websiteUrl": "https://ghelia.com/",
+            "roles": "Engenheiro de Software"
+        },
+        {
+            "name": "Pretia Technologies, Inc.",
+            "websiteUrl": "https://corporate.pretiaar.com/",
+            "roles": "Engenheiro de Software, Scrum Master"
+        }
+    ]
 }

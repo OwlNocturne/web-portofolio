@@ -4,5 +4,37 @@
     "contact": "Contact",
     "english": "English",
     "japanese": "Japanese",
-    "portuguese": "Portuguese"
+    "portuguese": "Portuguese",
+    "companies": "Companies",
+    "via": "Via",
+    "roles": "Roles",
+    "corporateWebsite": "Corporate Website",
+    "companiesData": [
+        {
+            "name": "National Institute of Informatics",
+            "websiteUrl": "https://www.nii.ac.jp/en",
+            "roles": "Invited Researcher"
+        },
+        {
+            "name": "Mobilus Inc.",
+            "websiteUrl": "https://mobilus.co.jp/",
+            "roles": "Software Engineer"
+        },
+        {
+            "name": "Playnext Lab Inc.",
+            "websiteUrl": "https://www.playnext-lab.co.jp/",
+            "roles": "Software Engineer"
+        },
+        {
+            "name": "Ghelia Inc.",
+            "agency": "Playnext Lab Inc",
+            "websiteUrl": "https://ghelia.com/",
+            "roles": "Software Engineer"
+        },
+        {
+            "name": "Pretia Technologies, Inc.",
+            "websiteUrl": "https://corporate.pretiaar.com/",
+            "roles": "Software Engineer, Scrum Master"
+        }
+    ]
 }

@@ -1,5 +1,6 @@
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Box, Heading, HStack, Link, useColorModeValue } from "@chakra-ui/react";
+import { useTranslation } from "react-i18next";
 
 type CompanyCardProps = {
     name: string;
@@ -9,6 +10,8 @@ type CompanyCardProps = {
 };
 
 export default function CompanyCard({ company }: { company: CompanyCardProps }) {
+    const { t } = useTranslation();
+
     return (
         <HStack
             display="block"
@@ -24,14 +27,14 @@ export default function CompanyCard({ company }: { company: CompanyCardProps }) 
             </Heading>
             {company.agency && (
                 <Heading fontSize={"xs"} fontFamily={"body"}>
-                    (Via {company.agency})
+                    ({t("via")} {company.agency})
                 </Heading>
             )}
             <Box fontWeight={600} color={"gray.500"}>
-                Roles: {company.roles}
+                {t("roles")}: {company.roles}
             </Box>
             <Link href={company.websiteUrl} fontWeight={600} color={"gray.500"} mb={4} isExternal>
-                Corporate website <ExternalLinkIcon mx="2px" />
+                {t("corporateWebsite")}Corporate website <ExternalLinkIcon mx="2px" />
             </Link>
         </HStack>
     );

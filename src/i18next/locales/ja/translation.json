@@ -1,8 +1,40 @@
 {
     "about": "About",
-    "portfolio": "Portfolio",
+    "portfolio": "ポートフォリオ",
     "contact": "お問い合わせ",
     "english": "英語",
     "japanese": "日本語",
-    "portuguese": "ポルトガル語"
+    "portuguese": "ポルトガル語",
+    "companies": "会社",
+    "via": "Via",
+    "roles": "役割",
+    "corporateWebsite": "企業サイト",
+    "companiesData": [
+        {
+            "name": "国立情報学研究所",
+            "websiteUrl": "https://www.nii.ac.jp/",
+            "roles": "研究インターシップ"
+        },
+        {
+            "name": "モビルス株式会社",
+            "websiteUrl": "https://mobilus.co.jp/",
+            "roles": "ソフトウェアエンジニア"
+        },
+        {
+            "name": "プレイネクストラボ株式会社",
+            "websiteUrl": "https://www.playnext-lab.co.jp/",
+            "roles": "ソフトウェアエンジニア"
+        },
+        {
+            "name": " ギリア株式会社",
+            "agency": "プレイネクストラボ株式会社",
+            "websiteUrl": "https://ghelia.com/",
+            "roles": "ソフトウェアエンジニア"
+        },
+        {
+            "name": "プレティア・テクノロジーズ株式会社",
+            "websiteUrl": "https://corporate.pretiaar.com/",
+            "roles": "ソフトウェアエンジニア, スクラムマスター"
+        }
+    ]
 }
