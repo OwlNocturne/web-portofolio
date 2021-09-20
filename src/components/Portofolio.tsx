@@ -3,14 +3,16 @@ import { Box, Center, Flex, Select, SimpleGrid, VStack } from "@chakra-ui/react"
 import ProjectCard from "./ProjectCard";
 import ProjectData from "../data/projects.json";
 import Seperator from "./Seperator";
+import { useTranslation } from "react-i18next";
 
 export default function Portofolio() {
     const [projectType, setProjectType] = React.useState(0);
+    const { t } = useTranslation();
 
     return (
         <Center w={"full"} id="Portofolio">
             <VStack>
-                <Seperator title={"Portofolio"} />
+                <Seperator title={t("portfolio")} />
                 <Box w={"full"}>
                     <Select
                         align={"flex-start"}

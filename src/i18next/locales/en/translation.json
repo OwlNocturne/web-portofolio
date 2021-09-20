@@ -6,6 +6,8 @@
     "japanese": "Japanese",
     "portuguese": "Portuguese",
     "companies": "Companies",
+    "myName": "Daniel Morais",
+    "aboutMeDescription": "I have delivered a variety of software products filling roles as varied as Director, Scrum Master, and Software engineer. I try to challenge myself in a variety of user-centered roles.",
     "via": "Via",
     "roles": "Roles",
     "corporateWebsite": "Corporate Website",
@@ -36,5 +38,12 @@
             "websiteUrl": "https://corporate.pretiaar.com/",
             "roles": "Software Engineer, Scrum Master"
         }
-    ]
+    ],
+    "contactMe": "Contact Me",
+    "emailAddress": "Email address",
+    "yourEmailPlaceholder": "Your email",
+    "yourName": "Your name",
+    "yourNamePlaceholder": "Your name",
+    "message": "Message",
+    "insertTextPlaceholder": "Please insert your text"
 }

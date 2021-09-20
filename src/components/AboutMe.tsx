@@ -1,6 +1,9 @@
 import { Stack, Flex, Text, VStack, useBreakpointValue, Heading } from "@chakra-ui/react";
+import { useTranslation } from "react-i18next";
 
 export default function AboutMe() {
+    const { t } = useTranslation();
+
     return (
         <Flex
             w={"full"}
@@ -22,7 +25,7 @@ export default function AboutMe() {
             >
                 <Stack w={"full"} align={"flex-start"} spacing={6}>
                     <Heading fontWeight={600} fontSize={"6xl"} lineHeight={"110%"}>
-                        Daniel Morais
+                        {t("myName")}
                     </Heading>
                     <Text
                         color={"gray.300"}
@@ -31,9 +34,7 @@ export default function AboutMe() {
                         fontSize={"2xl"}
                         w={"40%"}
                     >
-                        I have delivered a variety of software products filling roles as varied as
-                        Director, Scrum Master, and Software engineer. I try to challenge myself in
-                        a variety of user-centered roles.
+                        {t("aboutMeDescription")}
                     </Text>
                 </Stack>
             </VStack>

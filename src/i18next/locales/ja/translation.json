@@ -6,6 +6,8 @@
     "japanese": "日本語",
     "portuguese": "ポルトガル語",
     "companies": "会社",
+    "myName": "モライス ダニエル",
+    "aboutMeDescription": "I have delivered a variety of software products filling roles as varied as Director, Scrum Master, and Software engineer. I try to challenge myself in a variety of user-centered roles.",
     "via": "Via",
     "roles": "役割",
     "corporateWebsite": "企業サイト",
@@ -36,5 +38,12 @@
             "websiteUrl": "https://corporate.pretiaar.com/",
             "roles": "ソフトウェアエンジニア, スクラムマスター"
         }
-    ]
+    ],
+    "contactMe": "お問い合わせ",
+    "emailAddress": "連絡先",
+    "yourEmailPlaceholder": "Eメールアドレス",
+    "yourName": "お名前",
+    "yourNamePlaceholder": "お名前",
+    "message": "メッセージ",
+    "insertTextPlaceholder": "メッセージを入力してください"
 }

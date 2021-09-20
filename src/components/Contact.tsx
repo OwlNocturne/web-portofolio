@@ -16,6 +16,7 @@ import {
 import { CheckIcon } from "@chakra-ui/icons";
 import React from "react";
 import Seperator from "./Seperator";
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
     const [name, setName] = React.useState("");
@@ -23,6 +24,7 @@ export default function Contact() {
     const [message, setMessage] = React.useState("");
     const [state, setState] = useState<"initial" | "submitting" | "success">("initial");
     const [error] = useState(false);
+    const { t } = useTranslation();
 
     useEffect(() => {
         if (window.location.search.includes("success=true")) {
@@ -33,7 +35,7 @@ export default function Contact() {
     return (
         <Center>
             <VStack w={"full"} m={[0, 50]}>
-                <Seperator title={"Contact"} />
+                <Seperator title={t("contact")} />
                 <Flex
                     w={"full"}
                     m={[10, 50]}
@@ -56,7 +58,7 @@ export default function Contact() {
                             textAlign={"center"}
                             mb={5}
                         >
-                            Contact Me
+                            {t("contactMe")}
                         </Heading>
                         <VStack
                             as={"form"}
@@ -68,7 +70,7 @@ export default function Contact() {
                         >
                             <input type="hidden" name="form-name" value="contact" />
                             <FormControl isRequired>
-                                <FormLabel>Email address</FormLabel>
+                                <FormLabel>{t("emailAddress")}</FormLabel>
                                 <Input
                                     id={"email"}
                                     name={"email"}
@@ -81,15 +83,15 @@ export default function Contact() {
                                     borderColor={useColorModeValue("gray.300", "gray.700")}
                                     type={"email"}
                                     required
-                                    placeholder={"Your Email"}
-                                    aria-label={"Your Email"}
+                                    placeholder={t("yourEmailPlaceholder")}
+                                    aria-label={t("yourEmailPlaceholder")}
                                     value={email}
                                     disabled={state !== "initial"}
                                     onChange={(e) => setEmail(e.target.value)}
                                 />
                             </FormControl>
                             <FormControl isRequired>
-                                <FormLabel>Your Name</FormLabel>
+                                <FormLabel>{t("yourName")}</FormLabel>
                                 <Input
                                     id={"name"}
                                     name={"name"}
@@ -102,21 +104,21 @@ export default function Contact() {
                                     borderColor={useColorModeValue("gray.300", "gray.700")}
                                     type={"text"}
                                     required
-                                    placeholder={"Your Name"}
-                                    aria-label={"Your Name"}
+                                    placeholder={t("yourNamePlaceholder")}
+                                    aria-label={t("yourNamePlaceholder")}
                                     value={name}
                                     disabled={state !== "initial"}
                                     onChange={(e) => setName(e.target.value)}
                                 />
                             </FormControl>
                             <FormControl w={"100%"} isRequired>
-                                <FormLabel>Message:</FormLabel>
+                                <FormLabel>{t("message")}:</FormLabel>
                                 <Textarea
                                     id="message"
                                     name="message"
                                     value={message}
                                     onChange={(e) => setMessage(e.target.value)}
-                                    placeholder="Please insert your text"
+                                    placeholder={t("insertTextPlaceholder")}
                                 />
                             </FormControl>
 
