@@ -30,7 +30,7 @@
             "imageAlt": "Psycho-Pass Psycho Hazard",
             "title": "Psycho-Pass Psycho Hazard",
             "shortDescription": "AR escape game ",
-            "longDescription": " A Psycho Pass AR Escape game played in Shibuya.",
+            "longDescription": "Psycho Pass AR Escape game played in Shibuya.",
             "platforms": "Android, iPhone",
             "languages": "C#",
             "roles": "Scrum Master",
@@ -70,17 +70,6 @@
             "projectType": 1
         },
         {
-            "imageUrl": "../images/MobiWork.png",
-            "imageAlt": "MobiWorks",
-            "title": "MobiWorks",
-            "shortDescription": "Mobile app",
-            "longDescription": "A communication app for corportations to use at work.",
-            "platforms": "Android",
-            "languages": "Java",
-            "roles": "Software Engineer",
-            "projectType": 2
-        },
-        {
             "imageUrl": "../images/DeepAnalyzer.png",
             "imageAlt": "Deep Analyzer",
             "title": "Deep Analyzer",
@@ -90,6 +79,17 @@
             "languages": "Typescript, Python",
             "roles": "Software Engineer",
             "projectType": 3
+        },
+        {
+            "imageUrl": "../images/MobiWork.png",
+            "imageAlt": "MobiWorks",
+            "title": "MobiWorks",
+            "shortDescription": "Mobile app",
+            "longDescription": "A communication app for corportations to use at work.",
+            "platforms": "Android",
+            "languages": "Java",
+            "roles": "Software Engineer",
+            "projectType": 2
         }
     ],
     "via": "Via",

@@ -1,4 +1,4 @@
-import { chakra, Container, Stack, useColorModeValue, VisuallyHidden } from "@chakra-ui/react";
+import { chakra, Stack, useColorModeValue, VisuallyHidden } from "@chakra-ui/react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { ReactNode } from "react";
 
@@ -25,7 +25,7 @@ const SocialButton = ({
             justifyContent={"center"}
             transition={"background 0.3s ease"}
             _hover={{
-                bg: useColorModeValue("blackAlpha.200", "whiteAlpha.200"),
+                bg: useColorModeValue("blue.200", "blue.600"),
             }}
         >
             <VisuallyHidden>{label}</VisuallyHidden>
@@ -36,23 +36,13 @@ const SocialButton = ({
 
 export default function Social() {
     return (
-        <Container
-            as={Stack}
-            maxW={"6xl"}
-            py={4}
-            direction={{ base: "column", md: "row" }}
-            spacing={4}
-            justify={{ base: "center", md: "space-between" }}
-            align={{ base: "center", md: "center" }}
-        >
-            <Stack direction={"row"} spacing={6}>
-                <SocialButton label={"LinkedIn"} href={"https://www.linkedin.com/in/52748fnd"}>
-                    <FaLinkedin />
-                </SocialButton>
-                <SocialButton label={"GitHub"} href={"https://github.com/OwlNocturne"}>
-                    <FaGithub />
-                </SocialButton>
-            </Stack>
-        </Container>
+        <Stack py={4} direction={"row"} spacing={4} justify={"center"} align={"center"}>
+            <SocialButton label={"LinkedIn"} href={"https://www.linkedin.com/in/52748fnd"}>
+                <FaLinkedin />
+            </SocialButton>
+            <SocialButton label={"GitHub"} href={"https://github.com/OwlNocturne"}>
+                <FaGithub />
+            </SocialButton>
+        </Stack>
     );
 }

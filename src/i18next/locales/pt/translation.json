@@ -69,17 +69,6 @@
             "projectType": 1
         },
         {
-            "imageUrl": "../images/MobiWork.png",
-            "imageAlt": "MobiWorks",
-            "title": "MobiWorks",
-            "shortDescription": "Mobile app",
-            "longDescription": "Aplicação de comunicação para empresas",
-            "platforms": "Android",
-            "languages": "Java",
-            "roles": "Engenheiro de Software",
-            "projectType": 2
-        },
-        {
             "imageUrl": "../images/DeepAnalyzer.png",
             "imageAlt": "Deep Analyzer",
             "title": "Deep Analyzer",
@@ -89,6 +78,17 @@
             "languages": "Typescript, Python",
             "roles": "Engenheiro de Software",
             "projectType": 3
+        },
+        {
+            "imageUrl": "../images/MobiWork.png",
+            "imageAlt": "MobiWorks",
+            "title": "MobiWorks",
+            "shortDescription": "Mobile app",
+            "longDescription": "Aplicação de comunicação para empresas",
+            "platforms": "Android",
+            "languages": "Java",
+            "roles": "Engenheiro de Software",
+            "projectType": 2
         }
     ],
     "via": "Via",

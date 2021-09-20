@@ -10,11 +10,12 @@ type NavLinkProps = {
 export default function NavLink({ navLink }: { navLink: NavLinkProps }) {
     return (
         <Box
-            px={2}
-            py={1}
+            px={4}
+            py={2}
+            bg={useColorModeValue("gray.300", "gray.700")}
             _hover={{
                 textDecoration: "none",
-                bg: useColorModeValue("gray.200", "gray.700"),
+                bg: useColorModeValue("blue.200", "blue.600"),
             }}
         >
             <Link

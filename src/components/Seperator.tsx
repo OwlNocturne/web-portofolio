@@ -1,14 +1,12 @@
 import React from "react";
-import { Center, Divider, Heading, HStack } from "@chakra-ui/react";
+import { Divider, Heading, Flex } from "@chakra-ui/react";
 
 export default function Seperator({ title = "" }) {
     return (
-        <Center w={"full"}>
-            <HStack w={"80%"} p={4} spacing="24px">
-                <Divider />
-                <Heading>{title}</Heading>
-                <Divider />
-            </HStack>
-        </Center>
+        <Flex my={5} w={"80%"} alignItems={"center"}>
+            <Divider flex={1} mr={8} />
+            <Heading>{title} </Heading>
+            <Divider flex={1} ml={8} />
+        </Flex>
     );
 }

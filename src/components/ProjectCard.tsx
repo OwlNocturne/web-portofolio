@@ -27,7 +27,7 @@ export default function ProjectCard({ project }: { project: ProjectCardProps }) 
             borderRadius="lg"
             overflow="hidden"
             position="relative"
-            bg={useColorModeValue("white", "gray.900")}
+            bg={useColorModeValue("white", "gray.800")}
         >
             <Box display="block">
                 <Image src={`${project.imageUrl}`} alt={project.imageAlt} />
@@ -44,33 +44,33 @@ export default function ProjectCard({ project }: { project: ProjectCardProps }) 
                     {project.platforms}
                 </Badge>
             </Box>
-            <Box p="6">
-                <Box d="flex" alignItems="baseline">
-                    <Badge borderRadius="full" px="2" colorScheme="teal">
+            <Box pl={3} pr={3} pb={3}>
+                <Box
+                    color="blue.400"
+                    fontWeight="semibold"
+                    fontSize="sm"
+                    textTransform="uppercase"
+                    mt={2}
+                >
+                    {project.roles}
+                </Box>
+
+                <Box mt={2} d="flex" alignItems="center">
+                    <Badge borderRadius="full" px="3" colorScheme="teal">
                         {project.title}
                     </Badge>
+                    <Box
+                        color="gray.400"
+                        fontWeight="semibold"
+                        fontSize="xs"
+                        textTransform="uppercase"
+                        ml="2"
+                    >
+                        &bull; {project.shortDescription}
+                    </Box>
                 </Box>
-                <Box
-                    color="gray.500"
-                    fontWeight="semibold"
-                    letterSpacing="wide"
-                    fontSize="xs"
-                    textTransform="uppercase"
-                    ml="2"
-                >
-                    &bull; {project.shortDescription}
-                </Box>
-                <Box
-                    color="gray.500"
-                    fontWeight="semibold"
-                    letterSpacing="wide"
-                    fontSize="xs"
-                    textTransform="uppercase"
-                    ml="2"
-                >
-                    &bull; {project.roles}
-                </Box>
-                <Box mt="1" fontWeight="semibold" as="h4" lineHeight="tight">
+
+                <Box mt={2} ml={1} fontWeight="semibold" fontSize="sm" lineHeight="tight">
                     {project.longDescription}
                 </Box>
             </Box>

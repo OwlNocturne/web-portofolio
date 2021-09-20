@@ -69,17 +69,6 @@
             "projectType": 1
         },
         {
-            "imageUrl": "../images/MobiWork.png",
-            "imageAlt": "モビワーク",
-            "title": "モビワーク",
-            "shortDescription": "モバイルアプリ",
-            "longDescription": "仕事が早くなる、楽しくなる、コミュニケーションが変わる",
-            "platforms": "Android",
-            "languages": "Java",
-            "roles": "ソフトウェアエンジニア",
-            "projectType": 2
-        },
-        {
             "imageUrl": "../images/DeepAnalyzer.png",
             "imageAlt": "Deep Analyzer",
             "title": "Deep Analyzer",
@@ -89,6 +78,17 @@
             "languages": "Typescript, Python",
             "roles": "ソフトウェアエンジニア",
             "projectType": 3
+        },
+        {
+            "imageUrl": "../images/MobiWork.png",
+            "imageAlt": "モビワーク",
+            "title": "モビワーク",
+            "shortDescription": "モバイルアプリ",
+            "longDescription": "仕事が早くなる、楽しくなる、コミュニケーションが変わる",
+            "platforms": "Android",
+            "languages": "Java",
+            "roles": "ソフトウェアエンジニア",
+            "projectType": 2
         }
     ],
     "via": "派遣,",

@@ -1,10 +1,10 @@
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import {
-    Box,
     Button,
     Flex,
     HStack,
     Select,
+    Spacer,
     useColorMode,
     useColorModeValue,
 } from "@chakra-ui/react";
@@ -20,9 +20,7 @@ function LanguageSelect() {
     return (
         <Select
             value={selectedOption}
-            alignItems={"center"}
-            mr={5}
-            w={{ base: "100%", md: "100%" }}
+            mr={4}
             onChange={(e) => {
                 if (i18n.language !== e.target.value) {
                     i18n.changeLanguage(e.target.value);
@@ -48,23 +46,32 @@ export default function NavBar() {
     ];
 
     return (
-        <Box bg={useColorModeValue("gray.100", "gray.900")} px={4} w="100%">
-            <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
-                <HStack spacing={8} alignItems={"center"}>
-                    <HStack spacing={4} display="flex">
-                        {Links.map((link) => (
-                            <NavLink key={link.key} navLink={link}></NavLink>
-                        ))}
-                    </HStack>
-                </HStack>
-                <Flex alignItems={"center"}>
-                    <Social />
-                    <LanguageSelect />
-                    <Button onClick={toggleColorMode}>
-                        {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
-                    </Button>
-                </Flex>
-            </Flex>
-        </Box>
+        <Flex
+            bg={useColorModeValue("gray.100", "gray.900")}
+            px={4}
+            w="100%"
+            h={16}
+            alignItems={"center"}
+        >
+            <HStack spacing={4} display="flex">
+                {Links.map((link) => (
+                    <NavLink key={link.key} navLink={link}></NavLink>
+                ))}
+            </HStack>
+            <Spacer />
+            <HStack spacing={4}>
+                <Social />
+                <LanguageSelect />
+                <Button
+                    _hover={{
+                        textDecoration: "none",
+                        bg: useColorModeValue("blue.200", "blue.600"),
+                    }}
+                    onClick={toggleColorMode}
+                >
+                    {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+                </Button>
+            </HStack>
+        </Flex>
     );
 }
