@@ -1,4 +1,4 @@
-import { Link as LinkChakra, useColorModeValue } from "@chakra-ui/react";
+import { Box, useColorModeValue } from "@chakra-ui/react";
 import { Link } from "react-scroll";
 
 type NavLinkProps = {
@@ -9,7 +9,7 @@ type NavLinkProps = {
 
 export default function NavLink({ navLink }: { navLink: NavLinkProps }) {
     return (
-        <LinkChakra
+        <Box
             px={2}
             py={1}
             _hover={{
@@ -27,6 +27,6 @@ export default function NavLink({ navLink }: { navLink: NavLinkProps }) {
             >
                 {navLink.displayText}
             </Link>
-        </LinkChakra>
+        </Box>
     );
 }
