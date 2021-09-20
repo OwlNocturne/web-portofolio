@@ -34,7 +34,7 @@ export default function CompanyCard({ company }: { company: CompanyCardProps }) 
                 {t("roles")}: {company.roles}
             </Box>
             <Link href={company.websiteUrl} fontWeight={600} color={"gray.500"} mb={4} isExternal>
-                {t("corporateWebsite")}Corporate website <ExternalLinkIcon mx="2px" />
+                {t("corporateWebsite")} <ExternalLinkIcon mx="2px" />
             </Link>
         </HStack>
     );
