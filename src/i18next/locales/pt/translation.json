@@ -14,14 +14,14 @@
     "web": "Web",
     "projectsData": [
         {
-            "imageUrl": "../images/EbaEgg.jpg",
-            "imageAlt": "Eba Egg Logo",
-            "title": "Eba & Egg",
-            "shortDescription": "Plataformas",
-            "longDescription": "Um jogo de plataformas com duas personagems controladas ao mesmo tempo.",
-            "platforms": "Wii U",
+            "imageUrl": "../images/Evertale.jpg",
+            "imageAlt": "Evertale",
+            "title": "Evertale",
+            "shortDescription": "RPG Gacha",
+            "longDescription": "Com mais de um milhao de downloads, Evertale esteve no Top 3 de vendas de 95 paises!",
+            "platforms": "Android, iPhone",
             "languages": "C#",
-            "roles": "Director, Engenheiro de Software",
+            "roles": "Associate Producer",
             "projectType": 1
         },
         {
@@ -33,6 +33,17 @@
             "platforms": "Android, iPhone",
             "languages": "C#",
             "roles": "Scrum Master",
+            "projectType": 1
+        },
+        {
+            "imageUrl": "../images/EbaEgg.jpg",
+            "imageAlt": "Eba Egg Logo",
+            "title": "Eba & Egg",
+            "shortDescription": "Plataformas",
+            "longDescription": "Um jogo de plataformas com duas personagems controladas ao mesmo tempo.",
+            "platforms": "Wii U",
+            "languages": "C#",
+            "roles": "Director, Engenheiro de Software",
             "projectType": 1
         },
         {
