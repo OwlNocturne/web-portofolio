@@ -1,0 +1,12 @@
+{
+    "lng": [
+        {
+            "value":"en",
+            "key": "english"
+        },
+        {
+            "value":"pt",
+            "key": "portuguese"
+        }
+    ]
+}
