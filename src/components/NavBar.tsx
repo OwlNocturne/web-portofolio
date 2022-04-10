@@ -15,7 +15,7 @@ import { useState } from "react";
 import Settings from "../data/settings.json";
 
 function LanguageSelect() {
-    const { t, i18n } = useTranslation();
+    const { i18n } = useTranslation();
     const [selectedOption, setSelectedOption] = useState(i18n.language);
     const { lng } = Settings;
 
