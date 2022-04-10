@@ -12,12 +12,12 @@ import NavLink from "./NavLink";
 import Social from "./Social";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
-import Settings from "../data/settings.json";
+import SettingsData from "../data/settings.json";
 
 function LanguageSelect() {
     const { i18n } = useTranslation();
     const [selectedOption, setSelectedOption] = useState(i18n.language);
-    const { lng } = Settings;
+    const { lng } = SettingsData;
 
     return (
         <Select
