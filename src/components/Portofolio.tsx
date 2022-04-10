@@ -19,7 +19,7 @@ export default function Portofolio() {
                 <option value={3}>{t("web")}</option>
             </Select>
             <Flex>
-                <SimpleGrid columns={3} spacing={10}>
+                <SimpleGrid columns={{ base: 1, sm: 1, md: 2, lg: 3, xl: 4 }} spacing={10}>
                     {projectData.map((data) => {
                         if (projectType === 0 || data.projectType === projectType)
                             return <ProjectCard project={data} key={data.title} />;

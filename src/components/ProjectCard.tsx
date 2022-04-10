@@ -40,7 +40,7 @@ export default function ProjectCard({ project }: { project: ProjectCardProps }) 
                     top="5px"
                     right="5px"
                     z-index="2"
-                    fontSize={{ base: "9px", sm: "12px", md: "12px", lg: "12px" }}
+                    fontSize={"12px"}
                 >
                     {project.platforms}
                 </Badge>
