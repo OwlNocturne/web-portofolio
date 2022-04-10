@@ -22,7 +22,7 @@ export default function CompanyCard({ company }: { company: CompanyCardProps }) 
             p={6}
             textAlign={"center"}
         >
-            <Heading fontSize={"2xl"} fontFamily={"body"}>
+            <Heading fontSize={{ base: "md", sm: "lg", md: "xl", lg: "2xl" }} fontFamily={"body"}>
                 {company.name}
             </Heading>
             {company.agency && (
@@ -30,10 +30,21 @@ export default function CompanyCard({ company }: { company: CompanyCardProps }) 
                     ({t("via")} {company.agency})
                 </Heading>
             )}
-            <Box fontWeight={600} color={"gray.500"}>
+            <Box
+                fontWeight={600}
+                color={"gray.500"}
+                fontSize={{ base: "xs", sm: "xs", md: "lg", lg: "lg" }}
+            >
                 {t("roles")}: {company.roles}
             </Box>
-            <Link href={company.websiteUrl} fontWeight={600} color={"gray.500"} mb={4} isExternal>
+            <Link
+                href={company.websiteUrl}
+                fontWeight={600}
+                color={"gray.500"}
+                fontSize={{ base: "xs", sm: "xs", md: "lg", lg: "lg" }}
+                mb={4}
+                isExternal
+            >
                 {t("corporateWebsite")} <ExternalLinkIcon mx="2px" />
             </Link>
         </HStack>

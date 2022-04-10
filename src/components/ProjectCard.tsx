@@ -40,6 +40,7 @@ export default function ProjectCard({ project }: { project: ProjectCardProps }) 
                     top="5px"
                     right="5px"
                     z-index="2"
+                    fontSize={{ base: "9px", sm: "12px", md: "12px", lg: "12px" }}
                 >
                     {project.platforms}
                 </Badge>
@@ -48,14 +49,14 @@ export default function ProjectCard({ project }: { project: ProjectCardProps }) 
                 <Box
                     color="blue.400"
                     fontWeight="semibold"
-                    fontSize="sm"
+                    fontSize={["xs", "sm", "md"]}
                     textTransform="uppercase"
                     mt={2}
                 >
                     {project.roles}
                 </Box>
 
-                <Box mt={2} d="flex" alignItems="center">
+                <Box mt={2} display={{ md: "flex" }} alignItems="center">
                     <Badge borderRadius="full" px="3" colorScheme="teal">
                         {project.title}
                     </Badge>
@@ -70,7 +71,13 @@ export default function ProjectCard({ project }: { project: ProjectCardProps }) 
                     </Box>
                 </Box>
 
-                <Box mt={2} ml={1} fontWeight="semibold" fontSize="sm" lineHeight="tight">
+                <Box
+                    mt={2}
+                    ml={1}
+                    fontWeight="semibold"
+                    fontSize={["xs", "sm", "md"]}
+                    lineHeight="tight"
+                >
                     {project.longDescription}
                 </Box>
             </Box>

@@ -24,17 +24,21 @@ export default function AboutMe() {
                 }
             >
                 <Stack w={"full"} align={"flex-start"} spacing={6}>
-                    <Heading fontWeight={600} fontSize={"6xl"} lineHeight={"110%"}>
+                    <Heading
+                        fontWeight={600}
+                        fontSize={{ base: "30px", md: "45px", lg: "56px" }}
+                        lineHeight={"110%"}
+                    >
                         {t("myName")}
                     </Heading>
-                    <Text fontWeight={600} fontSize={"2xl"}>
+                    <Text fontWeight={600} fontSize={["xs", "sm", "md", "lg", "xl"]}>
                         {t("role")}
                     </Text>
                     <Text
                         color={"gray.300"}
-                        fontWeight={700}
+                        fontWeight={400}
                         lineHeight={1.2}
-                        fontSize={"1xl"}
+                        fontSize={["xs", "sm", "md", "lg", "xl"]}
                         w={"40%"}
                     >
                         {t("aboutMeDescription")}
