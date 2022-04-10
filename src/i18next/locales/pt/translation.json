@@ -7,21 +7,21 @@
     "portuguese": "Português",
     "companies": "Empresas",
     "myName": "Daniel Morais",
-    "aboutMeDescription": "I have delivered a variety of software products filling roles as varied as Director, Scrum Master, and Software engineer. I try to challenge myself in a variety of user-centered roles.",
+    "aboutMeDescription": " I am passioned about bringing user-centered products to life. In engaging with that passion I have adquired a broad set of skills and experience in software development, filling roles as varied as Producer, Director, Scrum Master, or Software engineer.  I am currently working as an Associate Producer.",
     "all": "Tudo",
     "games": "Jogos",
     "apps": "Apps",
     "web": "Web",
     "projectsData": [
         {
-            "imageUrl": "../images/EbaEgg.jpg",
-            "imageAlt": "Eba Egg Logo",
-            "title": "Eba & Egg",
-            "shortDescription": "Plataformas",
-            "longDescription": "Um jogo de plataformas com duas personagems controladas ao mesmo tempo.",
-            "platforms": "Wii U",
+            "imageUrl": "../images/Evertale.jpg",
+            "imageAlt": "Evertale",
+            "title": "Evertale",
+            "shortDescription": "RPG Gacha",
+            "longDescription": "Com mais de um milhao de downloads, Evertale esteve no Top 3 de vendas de 95 paises!",
+            "platforms": "Android, iPhone",
             "languages": "C#",
-            "roles": "Director, Engenheiro de Software",
+            "roles": "Associate Producer",
             "projectType": 1
         },
         {
@@ -33,6 +33,17 @@
             "platforms": "Android, iPhone",
             "languages": "C#",
             "roles": "Scrum Master",
+            "projectType": 1
+        },
+        {
+            "imageUrl": "../images/EbaEgg.jpg",
+            "imageAlt": "Eba Egg Logo",
+            "title": "Eba & Egg",
+            "shortDescription": "Plataformas",
+            "longDescription": "Um jogo de plataformas com duas personagems controladas ao mesmo tempo.",
+            "platforms": "Wii U",
+            "languages": "C#",
+            "roles": "Director, Engenheiro de Software",
             "projectType": 1
         },
         {

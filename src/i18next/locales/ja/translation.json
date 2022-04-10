@@ -14,14 +14,14 @@
     "web": "ウェブ",
     "projectsData": [
         {
-            "imageUrl": "../images/EbaEgg.jpg",
-            "imageAlt": "Eba Egg Logo",
-            "title": "Eba & Egg",
-            "shortDescription": "横スクロール",
-            "longDescription": "ハイスコア横スクロールゲーム",
-            "platforms": "Wii U",
+            "imageUrl": "../images/Evertale.jpg",
+            "imageAlt": "Evertale",
+            "title": "Evertale",
+            "shortDescription": "RPG Gacha",
+            "longDescription": "With over a million downloads, Evertale has been ranked Top 3 best-selling paid applications in 95 countries!",
+            "platforms": "Android, iPhone",
             "languages": "C#",
-            "roles": "監督, ソフトウェアエンジニア",
+            "roles": "Associate Producer",
             "projectType": 1
         },
         {
@@ -33,6 +33,17 @@
             "platforms": "Android, iPhone",
             "languages": "C#",
             "roles": "スクラムマスター",
+            "projectType": 1
+        },
+        {
+            "imageUrl": "../images/EbaEgg.jpg",
+            "imageAlt": "Eba Egg Logo",
+            "title": "Eba & Egg",
+            "shortDescription": "横スクロール",
+            "longDescription": "ハイスコア横スクロールゲーム",
+            "platforms": "Wii U",
+            "languages": "C#",
+            "roles": "監督, ソフトウェアエンジニア",
             "projectType": 1
         },
         {
@@ -120,6 +131,11 @@
             "name": "プレティア・テクノロジーズ株式会社",
             "websiteUrl": "https://corporate.pretiaar.com/",
             "roles": "ソフトウェアエンジニア, スクラムマスター"
+        },
+        {
+            "name": "ジグザゲーム株式会社",
+            "websiteUrl": "https://zigzagame.com/",
+            "roles": "アソシエイトプロデューサー"
         }
     ],
     "contactMe": "お問い合わせ",

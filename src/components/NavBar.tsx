@@ -12,10 +12,12 @@ import NavLink from "./NavLink";
 import Social from "./Social";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import Settings from "../data/settings.json";
 
 function LanguageSelect() {
     const { t, i18n } = useTranslation();
     const [selectedOption, setSelectedOption] = useState(i18n.language);
+    const { lng } = Settings;
 
     return (
         <Select
@@ -28,9 +30,15 @@ function LanguageSelect() {
                 }
             }}
         >
-            <option value={"en"}>{t("english")}</option>
+            {lng.map((data) => {
+                const { key } = data;
+                if (data.value !== null || data.key !== null)
+                    return <option value={data.value}>{i18n.t(key)}</option>;
+                else return null;
+            })}
+            {/* <option value={"en"}>{t("english")}</option>
             <option value={"ja"}>{t("japanese")}</option>
-            <option value={"pt"}>{t("portuguese")}</option>
+            <option value={"pt"}>{t("portuguese")}</option> */}
         </Select>
     );
 }

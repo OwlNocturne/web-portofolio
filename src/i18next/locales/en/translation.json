@@ -7,24 +7,23 @@
     "portuguese": "Português",
     "companies": "Companies",
     "myName": "Daniel Morais",
-    "aboutMeDescription": "I have delivered a variety of software products filling roles as varied as Director, Scrum Master, and Software engineer. I try to challenge myself in a variety of user-centered roles.",
+    "aboutMeDescription": " I am passioned about bringing user-centered products to life. In engaging with that passion I have adquired a broad set of skills and experience in software development, filling roles as varied as Producer, Director, Scrum Master, or Software engineer.  I am currently working as an Associate Producer.",
     "all": "All",
     "games": "Games",
     "apps": "Apps",
     "web": "Web",
     "projectsData": [
         {
-            "imageUrl": "../images/EbaEgg.jpg",
-            "imageAlt": "Eba Egg Logo",
-            "title": "Eba & Egg",
-            "shortDescription": "Platformer",
-            "longDescription": "A high score based platformer game.",
-            "platforms": "Wii U",
+            "imageUrl": "../images/Evertale.jpg",
+            "imageAlt": "Evertale",
+            "title": "Evertale",
+            "shortDescription": "RPG",
+            "longDescription": "With over a million downloads, Evertale has been ranked Top 3 best-selling paid applications in 95 countries!",
+            "platforms": "Android, iPhone",
             "languages": "C#",
-            "roles": "Director, Software Engineer",
+            "roles": "Associate Producer",
             "projectType": 1
         },
-
         {
             "imageUrl": "../images/PsychoPass.png",
             "imageAlt": "Psycho-Pass Psycho Hazard",
@@ -34,6 +33,17 @@
             "platforms": "Android, iPhone",
             "languages": "C#",
             "roles": "Scrum Master",
+            "projectType": 1
+        },
+        {
+            "imageUrl": "../images/EbaEgg.jpg",
+            "imageAlt": "Eba Egg Logo",
+            "title": "Eba & Egg",
+            "shortDescription": "Platformer",
+            "longDescription": "A high score based platformer game.",
+            "platforms": "Wii U",
+            "languages": "C#",
+            "roles": "Director, Software Engineer",
             "projectType": 1
         },
         {
@@ -121,6 +131,11 @@
             "name": "Pretia Technologies, Inc.",
             "websiteUrl": "https://corporate.pretiaar.com/",
             "roles": "Software Engineer, Scrum Master"
+        },
+        {
+            "name": "ZigZaGame Inc.",
+            "websiteUrl": "https://zigzagame.com/",
+            "roles": "Associate Producer"
         }
     ],
     "contactMe": "Contact Me",
