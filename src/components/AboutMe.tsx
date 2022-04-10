@@ -31,7 +31,7 @@ export default function AboutMe() {
                         color={"gray.300"}
                         fontWeight={700}
                         lineHeight={1.2}
-                        fontSize={"2xl"}
+                        fontSize={"1xl"}
                         w={"40%"}
                     >
                         {t("aboutMeDescription")}

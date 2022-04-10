@@ -47,7 +47,6 @@ export default function Contact() {
                     boxShadow={"xl"}
                     rounded={"lg"}
                     p={6}
-                    direction={"column"}
                 >
                     <Heading
                         as={"h2"}
