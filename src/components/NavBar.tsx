@@ -58,8 +58,9 @@ export default function NavBar() {
             bg={useColorModeValue("gray.100", "gray.900")}
             px={4}
             w="100%"
-            h={16}
+            h={{ base: 16, xs: 32, sm: 32 }}
             alignItems={"center"}
+            display={{ md: "flex" }}
         >
             <HStack spacing={4} display="flex">
                 {Links.map((link) => (

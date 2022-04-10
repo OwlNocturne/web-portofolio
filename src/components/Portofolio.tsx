@@ -12,7 +12,11 @@ export default function Portofolio() {
     return (
         <VStack w={"full"} id="Portofolio">
             <Seperator title={t("portfolio")} />
-            <Select w="20%" pb={4} onChange={(e) => setProjectType(parseInt(e.target.value))}>
+            <Select
+                w={{ base: "50%", sm: "40%", md: "30%", lg: "20%" }}
+                pb={4}
+                onChange={(e) => setProjectType(parseInt(e.target.value))}
+            >
                 <option value={0}>{t("all")}</option>
                 <option value={1}>{t("games")}</option>
                 <option value={2}>{t("apps")}</option>

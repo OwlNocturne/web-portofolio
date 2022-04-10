@@ -19,9 +19,11 @@ export default function AboutMe() {
                 w={"full"}
                 justify={"center"}
                 px={useBreakpointValue({ base: 4, md: 8 })}
-                bgGradient={
-                    "linear(to-r, blackAlpha.900, blackAlpha.900, blackAlpha.300, transparent)"
-                }
+                bgGradient={{
+                    base: "linear(to-r, blackAlpha.900, blackAlpha.900, blackAlpha.800, blackAlpha.600)",
+                    sm: "linear(to-r, blackAlpha.900, blackAlpha.900, blackAlpha.600, blackAlpha.200)",
+                    md: "linear(to-r, blackAlpha.900, blackAlpha.900, blackAlpha.300, transparent)",
+                }}
             >
                 <Stack w={"full"} align={"flex-start"} spacing={6}>
                     <Heading
@@ -38,8 +40,8 @@ export default function AboutMe() {
                         color={"gray.300"}
                         fontWeight={400}
                         lineHeight={1.2}
-                        fontSize={["xs", "sm", "md", "lg", "xl"]}
-                        w={"40%"}
+                        fontSize={["xs", "sm", "md", "lg"]}
+                        w={{ base: "80%", sm: "70%", md: "60%", lg: "50%" }}
                     >
                         {t("aboutMeDescription")}
                     </Text>
