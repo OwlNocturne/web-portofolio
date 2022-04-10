@@ -12,7 +12,7 @@ export default function Companies() {
         <VStack w={"full"} id="Companies">
             <Seperator title={t("companies")} />
             <Flex>
-                <SimpleGrid columns={{ base: 1, sm: 1, md: 2, lg: 3, xl: 4 }} spacing={10}>
+                <SimpleGrid columns={{ base: 1, sm: 1, md: 2, lg: 3, xl: 4 }} spacing={10} mx={4}>
                     {companiesData.map((data) => (
                         <CompanyCard company={data} key={data.name} />
                     ))}
