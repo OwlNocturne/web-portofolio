@@ -27,13 +27,18 @@ export default function AboutMe() {
             >
                 <Stack w={"full"} align={"flex-start"} spacing={6}>
                     <Heading
+                        color={"gray.300"}
                         fontWeight={600}
                         fontSize={{ base: "30px", md: "45px", lg: "56px" }}
                         lineHeight={"110%"}
                     >
                         {t("myName")}
                     </Heading>
-                    <Text fontWeight={600} fontSize={["xs", "sm", "md", "lg", "xl"]}>
+                    <Text
+                        color={"gray.300"}
+                        fontWeight={600}
+                        fontSize={["xs", "sm", "md", "lg", "xl"]}
+                    >
                         {t("role")}
                     </Text>
                     <Text
