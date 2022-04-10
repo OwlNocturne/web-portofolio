@@ -27,6 +27,9 @@ export default function AboutMe() {
                     <Heading fontWeight={600} fontSize={"6xl"} lineHeight={"110%"}>
                         {t("myName")}
                     </Heading>
+                    <Text fontWeight={600} fontSize={"2xl"}>
+                        {t("role")}
+                    </Text>
                     <Text
                         color={"gray.300"}
                         fontWeight={700}
